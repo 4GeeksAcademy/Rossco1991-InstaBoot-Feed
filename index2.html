@@ -13,17 +13,37 @@
           <span class="fs-4 ms-2"><i class="fa-brands fa-instagram fa-xl"></i>
             Instagram</span>
         </a>
-        <button class="btn btn-success me-2">
+        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#postModal">
             Create New Post
-        </button>
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="postModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fa-solid fa-gear"></i>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Accessibility</a></li>
+              <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+              <li><a class="dropdown-item text-danger border-top" href="#">Log Out</a></li>
             </ul>
           </div>
       </header>
@@ -36,15 +56,39 @@
                 <i class="fa-solid fa-square"></i>
             </a>
         </nav>
-    <div class="container">
+    <div class="container d-flex flex-column gap-5">
         <div class="card">
-            <div class="card-body"></div>
+            <div class="card-header">
+                <h1>Test</h1>
+            </div>
+            <div class="card-body">
+                <img class="card-img-top" src="assets/armoredcore.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
         </div>
         <div class="card">
-            <div class="card-body"></div>
+            <div class="card-header">
+                <h1>Test</h1>
+            </div>
+            <div class="card-body">
+                <img class="card-img-top" src="assets/NumberOfCat.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
         </div>
         <div class="card">
-            <div class="card-body"></div>
+            <div class="card-header">
+                <h1>test</h1>
+            </div>
+            <div class="card-body">
+                <img class="card-img-top" src="assets/RandomBird.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p></p>
+            </div>
         </div>
     </div>
 </body>
